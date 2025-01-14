@@ -9,17 +9,17 @@
   "routes": [
     {
       "src": "/list",
-      "dest": "api/main.py",
+      "dest": "api/index.py",
       "methods": ["GET"]
     },
     {
       "src": "/events/add",
-      "dest": "api/main.py",
+      "dest": "api/index.py",
       "methods": ["POST"]
     },
     {
       "src": "/events/edit",
-      "dest": "api/main.py",
+      "dest": "api/index.py",
       "methods": ["PUT"]
     }
   ]
