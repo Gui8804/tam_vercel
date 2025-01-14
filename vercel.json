@@ -1,17 +1,26 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "api/index.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/list",
-        "dest": "api/index.py",
-        "methods": ["GET"]
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/list",
+      "dest": "api/main.py",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/events/add",
+      "dest": "api/main.py",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/events/edit",
+      "dest": "api/main.py",
+      "methods": ["PUT"]
+    }
+  ]
+}
