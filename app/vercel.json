@@ -8,8 +8,9 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "api/index.py"
+        "src": "/list",
+        "dest": "api/index.py",
+        "methods": "GET"  
       }
     ]
   }
